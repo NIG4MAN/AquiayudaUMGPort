@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0" DefaultTargets="Build">
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <ProjectReference Include="../CapaModelo_Practica/CapaModelo_Practica.csproj">
+      <Project>{F339DB18-27CF-5B16-9C45-0A812612339A}</Project>
+      <Name>CapaModelo_Practica</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControladorPractica.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <Configuration>Debug</Configuration>
+    <Platform>AnyCPU</Platform>
+    <ProjectGuid>{51016B5B-9A10-5D2C-A64A-4F24A0144FE5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>CapaControlador_Practica</AssemblyName>
+    <RootNamespace>CapaControlador_Practica</RootNamespace>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OutputPath>../../Programa/</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>7.3</LangVersion>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)/Microsoft.CSharp.targets" />
+</Project>
