@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Ayudas - Pacientes</title>
+</head>
+
+<body>
+    <br>
+    <center>
+        <img class="imgLogo" src="Imagenes/LogoYMascota/logo.png">
+        <img class="imgButti" src="Imagenes/LogoYMascota/butti2.png">
+        <h1>Mantenimiento</h1>
+        <h1>Ayudas - Pacientes</h1>
+    </center>
+    <br>
+    <div class="container">
+        <h2>Pacientes</h2>
+        <p> Esta es la ventana de mantenimiento de pacientes del módulo de Bancos. Aquí puede consultar, agregar, modificar y eliminar los pacientes
+            registrados. De cada paciente se guarda su número, nombre, apellido, fecha de nacimiento, sexo, dirección, teléfono y estado.
+        </p>
+        <br><br><br>
+
+        <h2>¿Cómo abrir la ventana de Pacientes?</h2>
+        <p> 1. En la barra superior del módulo de Bancos presione el menú "Catálogos". </p>
+        <p> 2. Elija la opción "Pacientes". Se abrirá la ventana "8014 – Pacientes". </p>
+        <br><br><br>
+
+        <h2>Conozca la ventana</h2>
+        <p> 1. Barra de botones: contiene todas las acciones que puede realizar con los pacientes. </p>
+        <p> 2. Formulario: aparece al presionar "Ingresar" o "Modificar" y es donde se escriben los datos del paciente. </p>
+        <p> 3. Tabla de pacientes: muestra un paciente por fila. La fila en azul es el paciente seleccionado. </p>
+        <p> La tabla tiene estas columnas: "pk_idPaciente" es el número del paciente; "nombrePaciente" y "apellidoPaciente" son su nombre y apellido;
+            "fechaNacimientoPaciente" es su fecha de nacimiento; "sexoPaciente" indica su sexo; "direccionPaciente" y "telefonoPaciente" son su dirección y teléfono;
+            "estadoPaciente" indica si el paciente está activo (1) o inactivo (0).
+        </p>
+        <br><br><br>
+
+        <h2>Los botones de la barra</h2>
+        <p> 1. Ingresar; permite escribir un paciente nuevo. </p>
+        <p> 2. Consultar; busca un paciente en la tabla. </p>
+        <p> 3. Modificar; permite cambiar los datos del paciente seleccionado. </p>
+        <p> 4. Eliminar; borra el paciente seleccionado. </p>
+        <p> 5. Guardar; confirma lo que escribió al ingresar o modificar. </p>
+        <p> 6. Cancelar; deja lo que estaba haciendo sin guardar cambios. </p>
+        <p> 7. Refrescar; vuelve a cargar la tabla con los datos más recientes. </p>
+        <p> 8. Imprimir; abre el reporte de pacientes. </p>
+        <p> 9. Ayuda; abre este archivo de ayuda. </p>
+        <p> 10. Inicio; se posiciona en el primer paciente de la tabla. </p>
+        <p> 11. Anterior; retrocede un paciente. </p>
+        <p> 12. Siguiente; avanza un paciente. </p>
+        <p> 13. Fin; se posiciona en el último paciente de la tabla. </p>
+        <p> 14. Salir; cierra la ventana. </p>
+        <br><br><br>
+
+        <h2>Ingresar</h2>
+        <p> Use este botón para registrar un paciente nuevo. Siga estos pasos: </p>
+        <p> 1. Presione el botón "Ingresar"; se abre el formulario "Nuevo registro". </p>
+        <p> 2. pk_idPaciente; escriba el número del paciente. Este número lo escribe usted y no puede repetirse. </p>
+        <p> 3. nombrePaciente y apellidoPaciente; escriba el nombre y el apellido. </p>
+        <p> 4. fechaNacimientoPaciente; elija la fecha de nacimiento en el calendario. </p>
+        <p> 5. sexoPaciente; escriba el sexo, por ejemplo "Femenino" o "Masculino". </p>
+        <p> 6. direccionPaciente y telefonoPaciente; escriba la dirección y el teléfono. </p>
+        <p> 7. estadoPaciente; escriba 1 si el paciente está activo o 0 si está inactivo. Si no ve este campo, baje con la rueda del mouse dentro del formulario. </p>
+        <br><br><br>
+
+        <h2>Guardar</h2>
+        <p> Después de presionar "Ingresar" (o "Modificar") y llenar los datos, siga estos pasos: </p>
+        <p> 1. Presione el botón "Guardar". </p>
+        <p> 2. Aparece un mensaje que confirma que el registro quedó guardado. Presione "Aceptar". </p>
+        <p> 3. La tabla se actualiza y muestra el paciente guardado. </p>
+        <br><br><br>
+
+        <h2>Consultar</h2>
+        <p> 1. Presione el botón "Consultar". Se abre una ventana para elegir el paciente que desea buscar; selecciónelo y acepte. La tabla muestra solo
+            ese paciente. Para volver a ver todos presione "Refrescar". </p>
+        <br><br><br>
+
+        <h2>Modificar</h2>
+        <p> 1. Seleccione en la tabla el paciente que desea cambiar y presione el botón "Modificar". Sus datos aparecen en el formulario; el número
+            (pk_idPaciente) no se puede cambiar. </p>
+        <p> 2. Cambie lo que necesite y presione "Guardar". La tabla se actualiza con los nuevos datos. </p>
+        <br><br><br>
+
+        <h2>Eliminar</h2>
+        <p> 1. Seleccione en la tabla el paciente que desea eliminar y presione el botón "Eliminar". </p>
+        <p> 2. El sistema le pide confirmar. Si acepta, el paciente se elimina y la tabla se actualiza sin él. </p>
+        <p> Si solo quiere que un paciente deje de usarse, puede usar "Modificar" y cambiar su estado a 0 en lugar de eliminarlo. </p>
+        <br><br><br>
+
+        <h2>Cancelar</h2>
+        <p> Si está ingresando o modificando un paciente y ya no desea continuar, presione "Cancelar". El formulario se cierra y no se guarda ningún cambio.
+            Este botón no elimina pacientes.
+        </p>
+        <br><br><br>
+
+        <h2>Reporte</h2>
+        <p> 1. Presione el botón "Imprimir". Se abre el reporte con el listado de pacientes: número, nombre, apellido, fecha de nacimiento, sexo, dirección,
+            teléfono y estado. </p>
+        <p> 2. Desde la barra del reporte puede cambiar de página y exportarlo. </p>
+        <br><br><br>
+    </div>
+</body>
+
+</html>
